@@ -1,7 +1,7 @@
 # BitsAndPieces
 A group of snippets that I use frequently.
 
-For SignCertificate:
+For SignCertificate (edited from https://www.youtube.com/watch?v=fQEhA79ifnI):
 Create a certificate chain using keytool 
 1. Create the keystore and the root certifying authority's certificate rootca first with the following command
 keytool -genkey -v -alias rootca -keyalg RSA -keystore kstore
@@ -14,4 +14,3 @@ java SignCertificate kstore rootCA CA1 CA1signed
 
 4. Now export the new signed certificate to a file CA1signed.crt 
 keytool -export -alias CA1signed -keystore kstore -file CA1signed.crt
-
