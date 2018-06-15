@@ -2,6 +2,7 @@
 A group of snippets that I use frequently.
 
 For SignCertificate (edited from https://www.youtube.com/watch?v=fQEhA79ifnI):
+
 Create a certificate chain using keytool 
 1. Create the keystore and the root certifying authority's certificate rootca first with the following command
 keytool -genkey -v -alias rootca -keyalg RSA -keystore kstore
